@@ -10,4 +10,4 @@ app.get('/api/whoami', function(req, res) {
   console.log(req.headers);
 });
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
