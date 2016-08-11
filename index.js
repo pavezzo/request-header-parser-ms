@@ -7,7 +7,6 @@ app.get('/api/whoami', function(req, res) {
     language: req.headers['accept-language'].split(",")[0],
     software: req.headers['user-agent'].split(/\((.*?)\)/)[1]
   });
-  console.log(req.headers);
 });
 
 app.listen(process.env.PORT || 8000);
